@@ -7,7 +7,7 @@
 /**
 	@file bios.h
 
-	@brief The Virtual Machine API
+@brief The Virtual Machine API
 
 	This file contains the API for a virtual machine (simulated computer) 
 	which we will refer to as VM. This VM is used to implement tinyos3 on.
@@ -15,7 +15,7 @@
 	The VM has a multicore CPU and peripherals.
 
 	A simulation starts by calling function @c vm_boot. The description of the
-	VM (currently, the number of simulated cores and the number of terminal
+VM (currently, the number of simulated cores and the number of terminal
 	devices), and also the initial function executed by each 
 	core at boot time, are given as arguments.
 

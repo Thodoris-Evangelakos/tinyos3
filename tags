@@ -1,0 +1,888 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALARM	bios.h	/^	ALARM,            	\/**< Raised when the core's timer expires. *\/$/;"	e	enum:Interrupt
+ALIVE	kernel_proc.h	/^  ALIVE,  \/**< @brief The PID is given to a process *\/$/;"	e	enum:pid_state_e
+ARGS	unit_testing.c	/^struct program_arguments ARGS = {$/;"	v	typeref:struct:program_arguments
+ASSERT	unit_testing.h	268;"	d
+ASSERT_MSG	unit_testing.h	254;"	d
+B	validate_api.c	/^	barrier* B;$/;"	m	struct:cyclic_joins	file:
+BARE_FUNC	unit_testing.h	/^typedef enum { NO_FUNC, BARE_FUNC, BOOT_FUNC, SUITE_FUNC } Test_type;$/;"	e	enum:__anon13
+BARE_TEST	unit_testing.h	342;"	d
+BARRIER_INIT	tinyoslib.h	83;"	d
+BASICFLAGS	Makefile	/^BASICFLAGS= -pthread -std=c11 -fno-builtin-printf $(VALGRIND_FLAG)$/;"	m
+BIOS_H	bios.h	2;"	d
+BLACK	unit_testing.c	49;"	d	file:
+BLUE	unit_testing.c	53;"	d	file:
+BOOT_FUNC	unit_testing.h	/^typedef enum { NO_FUNC, BARE_FUNC, BOOT_FUNC, SUITE_FUNC } Test_type;$/;"	e	enum:__anon13
+BOOT_TEST	unit_testing.h	352;"	d
+BarrierSync	tinyoslib.c	/^void BarrierSync(barrier* bar, unsigned int n)$/;"	f
+CC	Makefile	/^CC = gcc$/;"	m
+CCB	kernel_sched.h	/^} CCB;$/;"	t	typeref:struct:core_control_block
+CCB	util.h	/^typedef struct core_control_block CCB;		\/**< @brief Forward declaration *\/$/;"	t	typeref:struct:core_control_block
+CFLAGS	Makefile	/^CFLAGS= -Wall -D_GNU_SOURCE $(BASICFLAGS)$/;"	m
+CHECK	util.h	90;"	d
+CHECKRC	util.h	75;"	d
+CHECK_CONDITION	util.h	101;"	d
+COLOR	unit_testing.c	/^static inline const char* COLOR(const char* msg, const char* color)$/;"	f	file:
+COMMANDS	tinyos_shell.c	/^COMMANDS[]  = $/;"	v	typeref:struct:__anon16
+COMPLETE	unit_testing.c	331;"	d	file:
+COMPLETE	unit_testing.c	384;"	d	file:
+CON	terminal.c	45;"	d	file:
+COND_INIT	tinyos.h	136;"	d
+CONERR	terminal.c	50;"	d	file:
+CORE	bios.c	/^static Core CORE[MAX_CORES];$/;"	v	file:
+CTX_CLEAN	kernel_sched.h	/^	CTX_CLEAN, \/**< @brief Context is clean. *\/$/;"	e	enum:__anon6
+CTX_DIRTY	kernel_sched.h	/^	CTX_DIRTY \/**< @brief Context is dirty. *\/$/;"	e	enum:__anon6
+CURCORE	kernel_sched.c	29;"	d	file:
+CURPROC	kernel_sched.h	181;"	d
+CURRENT_POS	unit_testing.c	/^static int CURRENT_POS = 0;					\/* Current print pos beyond the indent *\/$/;"	v	file:
+CURTHREAD	kernel_sched.c	37;"	d	file:
+CYAN	unit_testing.c	55;"	d	file:
+C_OBJ	Makefile	/^C_OBJ=$(C_SRC:.c=.o)$/;"	m
+C_OBJECTS	Makefile	/^C_OBJECTS=$(C_SOURCES:.c=.o)$/;"	m
+C_PROG	Makefile	/^C_PROG= test_util.c \\$/;"	m
+C_SOURCES	Makefile	/^C_SOURCES= $(C_PROG) $(C_SRC)$/;"	m
+C_SRC	Makefile	/^C_SRC= bios.c $(wildcard kernel_*.c) tinyoslib.c symposium.c unit_testing.c console.c$/;"	m
+Capitalize	tinyos_shell.c	/^int Capitalize(size_t argc, const char** argv)$/;"	f
+Close	kernel_dev.h	/^    int (*Close)(void* this);$/;"	m	struct:file_operations
+CondVar	tinyos.h	/^} CondVar;$/;"	t	typeref:struct:__anon11
+Cond_Broadcast	kernel_cc.c	/^void Cond_Broadcast(CondVar* cv)$/;"	f
+Cond_Signal	kernel_cc.c	/^void Cond_Signal(CondVar* cv)$/;"	f
+Cond_TimedWait	kernel_cc.c	/^int Cond_TimedWait(Mutex* mutex, CondVar* cv, timeout_t timeout)$/;"	f
+Cond_Wait	kernel_cc.c	/^int Cond_Wait(Mutex* mutex, CondVar* cv)$/;"	f
+Core	bios.c	/^} Core;$/;"	t	typeref:struct:core	file:
+DCB	kernel_dev.h	/^} DCB;$/;"	t	typeref:struct:device_control_block
+DCB	util.h	/^typedef struct device_control_block DCB;	\/**< @brief Forward declaration *\/$/;"	t	typeref:struct:device_control_block
+DEBUG	Makefile	/^DEBUG=1$/;"	m
+DEBUGFLAGS	Makefile	/^DEBUGFLAGS=  -g3 $/;"	m
+DEFAULT_TIMEOUT	unit_testing.h	339;"	d
+DEV_MAX	kernel_dev.h	/^	DEV_MAX      \/**< @brief placeholder for maximum device number *\/$/;"	e	enum:__anon10
+DEV_NULL	kernel_dev.h	/^	DEV_NULL,    \/**< @brief Null device *\/$/;"	e	enum:__anon10
+DEV_SERIAL	kernel_dev.h	/^	DEV_SERIAL,  \/**< @brief Serial device *\/$/;"	e	enum:__anon10
+DT	kernel_dev.c	/^DCB DT[MAX_TERMINALS];$/;"	v
+Data	test_util.c	/^static const char* Data[5] = { "", "H", "Ha", "a", "asdas" };$/;"	v	file:
+Device_type	kernel_dev.h	/^}  Device_type;$/;"	t	typeref:enum:__anon10
+EATING	symposium.h	/^typedef enum { NOTHERE=0, THINKING, HUNGRY, EATING } PHIL;$/;"	e	enum:__anon1
+EMIT_INDENT	unit_testing.c	/^static int EMIT_INDENT = 1;					\/* Whether wwe should emit an indent *\/$/;"	v	file:
+EXAMPLE_PROG	Makefile	/^EXAMPLE_PROG= $(wildcard *_example*.c)$/;"	m
+EXITED	kernel_sched.h	/^	EXITED \/**< @brief A terminated thread   *\/$/;"	e	enum:__anon5
+Echo	tinyos_shell.c	/^int Echo(size_t argc, const char** argv)$/;"	f
+Execute	tinyoslib.c	/^int Execute(Program prog, size_t argc, const char** argv)$/;"	f
+FAIL	unit_testing.h	280;"	d
+FATAL	util.h	48;"	d
+FATALERR	util.h	61;"	d
+FBASE	symposium.h	58;"	d
+FCB	kernel_streams.h	/^} FCB;$/;"	t	typeref:struct:file_control_block
+FCB	util.h	/^typedef struct file_control_block FCB;		\/**< @brief Forward declaration *\/$/;"	t	typeref:struct:file_control_block
+FCB_decref	kernel_streams.c	/^int FCB_decref(FCB* fcb)$/;"	f
+FCB_freelist	kernel_streams.c	/^rlnode FCB_freelist;$/;"	v
+FCB_incref	kernel_streams.c	/^void FCB_incref(FCB* fcb)$/;"	f
+FCB_reserve	kernel_streams.c	/^int FCB_reserve(size_t num, Fid_t *fid, FCB** fcb)$/;"	f
+FCB_unreserve	kernel_streams.c	/^void FCB_unreserve(size_t num, Fid_t *fid, FCB** fcb)$/;"	f
+FGAP	symposium.h	61;"	d
+FIDT	kernel_proc.h	/^  FCB* FIDT[MAX_FILEID];  \/**< @brief The fileid table of the process *\/$/;"	m	struct:process_control_block
+FIFOS	Makefile	/^FIFOS= con0 con1 con2 con3 kbd0 kbd1 kbd2 kbd3$/;"	m
+FLAG_FAILURE	unit_testing.c	/^int FLAG_FAILURE=0;                     \/* Flag failure in assert macros. *\/$/;"	v
+FMAX	mtask.c	/^int FMAX= FBASE+FGAP;$/;"	v
+FMIN	mtask.c	/^int FMIN= FBASE;$/;"	v
+FREE	kernel_proc.h	/^  FREE,   \/**< @brief The PID is free and available *\/$/;"	e	enum:pid_state_e
+FT	kernel_streams.c	/^FCB FT[MAX_FILES];$/;"	v
+FUDGE	unit_testing.c	596;"	d	file:
+FUDGE	unit_testing.h	310;"	d
+Fibonacci	tinyos_shell.c	/^int Fibonacci(size_t argc, const char** argv)$/;"	f
+Fid_t	tinyos.h	/^typedef int Fid_t;  $/;"	t
+GREEN	unit_testing.c	51;"	d	file:
+GS	tinyos_shell.c	433;"	d	file:
+HUNGRY	symposium.h	/^typedef enum { NOTHERE=0, THINKING, HUNGRY, EATING } PHIL;$/;"	e	enum:__anon1
+Hanoi	tinyos_shell.c	/^int Hanoi(size_t argc, const char** argv)$/;"	f
+HelpMessage	tinyos_shell.c	/^int HelpMessage(size_t argc, const char** argv)$/;"	f
+ICI	bios.h	/^	ICI,				\/**< Raised by some core, via cpu_ici() *\/$/;"	e	enum:Interrupt
+IDLE_THREAD	kernel_sched.h	/^	IDLE_THREAD, \/**< @brief Marks an idle thread. *\/$/;"	e	enum:__anon7
+IN	terminal.c	42;"	d	file:
+INCLUDE_PATH	Makefile	/^INCLUDE_PATH=-I.$/;"	m
+INDENT	unit_testing.c	/^static inline void INDENT() {$/;"	f	file:
+INDENT_POS	unit_testing.c	/^static int INDENT_POS = 0;                 	\/* Current indent *\/$/;"	v	file:
+INDENT_STACK	unit_testing.c	/^static int INDENT_STACK[INDENT_STACK_MAX];     \/* Saved indents *\/$/;"	v	file:
+INDENT_STACK_MAX	unit_testing.c	45;"	d	file:
+INDENT_STACK_SIZE	unit_testing.c	/^static int INDENT_STACK_SIZE=0;                \/* Current no fo saved indents *\/$/;"	v	file:
+INDENT_STEP	unit_testing.c	46;"	d	file:
+INERR	terminal.c	47;"	d	file:
+INIT	kernel_sched.h	/^	INIT, \/**< @brief TCB initialising *\/$/;"	e	enum:__anon5
+INPUT_OPEN	terminal.c	/^int INPUT_OPEN=1;	$/;"	v
+IODIR_RX	bios.c	/^	IODIR_RX = 0,$/;"	e	enum:io_direction	file:
+IODIR_TX	bios.c	/^	IODIR_TX = 1$/;"	e	enum:io_direction	file:
+Interrupt	bios.h	/^typedef enum Interrupt$/;"	g
+Interrupt	bios.h	/^} Interrupt;$/;"	t	typeref:enum:Interrupt
+KBD	terminal.c	44;"	d	file:
+KBDERR	terminal.c	49;"	d	file:
+LDFLAGS	Makefile	/^LDFLAGS= $(PLFLAGS) $(BASICFLAGS)$/;"	m
+LEFT	symposium.c	/^int LEFT(int i, int N) { return (i+1) % N; }$/;"	f
+LIBS	Makefile	/^LIBS=-lpthread -lrt -lm$/;"	m
+LineEnum	tinyos_shell.c	/^int LineEnum(size_t argc, const char** argv)$/;"	f
+ListPrograms	tinyos_shell.c	/^int ListPrograms(size_t argc, const char** argv)$/;"	f
+LowerCase	tinyos_shell.c	/^int LowerCase(size_t argc, const char** argv)$/;"	f
+MAGENTA	unit_testing.c	54;"	d	file:
+MAX_CORES	bios.h	132;"	d
+MAX_FILEID	tinyos.h	50;"	d
+MAX_FILES	kernel_streams.c	9;"	d	file:
+MAX_PORT	tinyos.h	550;"	d
+MAX_PROC	tinyos.h	43;"	d
+MAX_TERMINALS	bios.h	135;"	d
+MAX_TESTS	unit_testing.h	207;"	d
+MAX_TESTS_AVAILABLE	unit_testing.c	774;"	d	file:
+MSG	unit_testing.c	/^void MSG(const char* format, ...)$/;"	f
+MUTEX_INIT	tinyos.h	89;"	d
+MUTEX_SPINS	kernel_cc.c	37;"	d	file:
+MUTEX_SPINS	kernel_cc.c	54;"	d	file:
+More	tinyos_shell.c	/^int More(size_t argc, const char** argv)$/;"	f
+Mutex	tinyos.h	/^typedef char Mutex;$/;"	t
+Mutex_Lock	kernel_cc.c	/^void Mutex_Lock(Mutex* lock)$/;"	f
+Mutex_Unlock	kernel_cc.c	/^void Mutex_Unlock(Mutex* lock)$/;"	f
+N	symposium.h	/^	int N;				\/**< Number of philosophers *\/$/;"	m	struct:__anon2
+N	validate_api.c	/^	unsigned int N;$/;"	m	struct:cyclic_joins	file:
+NCHILDREN	validate_api.c	2295;"	d	file:
+NCHILDREN	validate_api.c	230;"	d	file:
+NCHILDREN	validate_api.c	2317;"	d	file:
+NCHILDREN	validate_api.c	269;"	d	file:
+NDEBUG	test_util.c	11;"	d	file:
+NData	test_util.c	/^static const int NData = 5;$/;"	v	file:
+NLEVELS	validate_api.c	231;"	d	file:
+NLEVELS	validate_api.c	270;"	d	file:
+NOFILE	tinyos.h	53;"	d
+NOPORT	tinyos.h	555;"	d
+NOPROC	tinyos.h	40;"	d
+NORMAL	unit_testing.c	57;"	d	file:
+NORMAL_THREAD	kernel_sched.h	/^	NORMAL_THREAD \/**< @brief Marks a normal thread *\/$/;"	e	enum:__anon7
+NOTHERE	symposium.h	/^typedef enum { NOTHERE=0, THINKING, HUNGRY, EATING } PHIL;$/;"	e	enum:__anon1
+NOTHREAD	tinyos.h	62;"	d
+NO_FUNC	unit_testing.h	/^typedef enum { NO_FUNC, BARE_FUNC, BOOT_FUNC, SUITE_FUNC } Test_type;$/;"	e	enum:__anon13
+NO_TIMEOUT	kernel_sched.h	186;"	d
+OPTFLAGS	Makefile	/^OPTFLAGS= -g3 -finline -march=native -O3 -DNDEBUG$/;"	m
+OUT	terminal.c	43;"	d	file:
+OUTERR	terminal.c	48;"	d	file:
+Open	kernel_dev.h	/^  	void* (*Open)(uint minor);$/;"	m	struct:file_operations
+PCB	kernel_proc.h	/^} PCB;$/;"	t	typeref:struct:process_control_block
+PCB	util.h	/^typedef struct process_control_block PCB;	\/**< @brief Forward declaration *\/$/;"	t	typeref:struct:process_control_block
+PHIL	symposium.h	/^typedef enum { NOTHERE=0, THINKING, HUNGRY, EATING } PHIL;$/;"	t	typeref:enum:__anon1
+PIC_active	bios.c	/^static volatile sig_atomic_t PIC_active;$/;"	v	file:
+PIC_daemon	bios.c	/^static void PIC_daemon(void)$/;"	f	file:
+PIC_loops	bios.c	/^static unsigned long PIC_loops;$/;"	v	file:
+PIC_thread	bios.c	/^static pthread_t PIC_thread;$/;"	v	file:
+PLFLAGS	Makefile	/^PLFLAGS= -g -pg$/;"	m
+PLFLAGS	Makefile	/^PLFLAGS=$/;"	m
+POST_CALL	kernel_sys.c	20;"	d	file:
+PRE_CALL	kernel_sys.c	15;"	d	file:
+PROCINFO_MAX_ARGS_SIZE	tinyos.h	707;"	d
+PROFFLAGS	Makefile	/^PROFFLAGS= $/;"	m
+PROFFLAGS	Makefile	/^PROFFLAGS= -g -pg $/;"	m
+PROXY	unit_testing.c	/^term_proxy PROXY[MAX_TERMINALS];$/;"	v
+PT	kernel_proc.c	/^PCB PT[MAX_PROC];$/;"	v
+ParseProcInfo	tinyoslib.c	/^int ParseProcInfo(procinfo* pinfo, Program* prog, int argc, const char** argv )$/;"	f
+PatternProc	unit_testing.c	/^typedef void (*PatternProc)(struct proxy_daemon*, const char*);$/;"	t	file:
+PhilosopherProcess	symposium.c	/^int PhilosopherProcess(int argl, void* args)$/;"	f
+PhilosopherThread	symposium.c	/^int PhilosopherThread(int i, void* symp)$/;"	f
+Pid_t	tinyos.h	/^typedef int Pid_t;		\/* The PID type  *\/$/;"	t
+Program	tinyoslib.h	/^typedef int (*Program)(size_t argc, const char** argv);$/;"	t
+QUANTUM	kernel_sched.h	279;"	d
+QUIET	symposium.c	12;"	d	file:
+READY	kernel_sched.h	/^	READY, \/**< @brief A thread ready to be scheduled.   *\/$/;"	e	enum:__anon5
+RED	unit_testing.c	50;"	d	file:
+REMOTE_SERVER_DEFAULT_PORT	tinyos_shell.c	402;"	d	file:
+RESULTS_INIT	unit_testing.c	637;"	d	file:
+RIGHT	symposium.c	/^int RIGHT(int i, int N) { return (i+N-1) % N; }$/;"	f
+RUNNING	kernel_sched.h	/^	RUNNING, \/**< @brief A thread running on some core   *\/$/;"	e	enum:__anon5
+Read	kernel_dev.h	/^    int (*Read)(void* this, char *buf, unsigned int size);$/;"	m	struct:file_operations
+RemoteClient	tinyos_shell.c	/^int RemoteClient(size_t argc, const char** argv)$/;"	f
+RemoteServer	tinyos_shell.c	/^int RemoteServer(size_t argc, const char** argv)$/;"	f
+Repeat	tinyos_shell.c	/^int Repeat(size_t argc, const char** argv)$/;"	f
+Results	unit_testing.c	/^} Results;$/;"	t	typeref:struct:__anon8	file:
+RunTerm	tinyos_shell.c	/^int RunTerm(size_t argc, const char** argv)$/;"	f
+S	symposium.c	/^typedef struct { int i; SymposiumTable* S; } philosopher_args;$/;"	m	struct:__anon4	file:
+SCHED	kernel_sched.c	/^rlnode SCHED; \/* The scheduler queue *\/$/;"	v
+SCHED_CAUSE	kernel_sched.h	/^enum SCHED_CAUSE {$/;"	g
+SCHED_IDLE	kernel_sched.h	/^	SCHED_IDLE, \/**< @brief The idle thread called yield *\/$/;"	e	enum:SCHED_CAUSE
+SCHED_IO	kernel_sched.h	/^	SCHED_IO, \/**< @brief The thread is waiting for I\/O *\/$/;"	e	enum:SCHED_CAUSE
+SCHED_MUTEX	kernel_sched.h	/^	SCHED_MUTEX, \/**< @brief @c Mutex_Lock yielded on contention *\/$/;"	e	enum:SCHED_CAUSE
+SCHED_PIPE	kernel_sched.h	/^	SCHED_PIPE, \/**< @brief Sleep at a pipe or socket *\/$/;"	e	enum:SCHED_CAUSE
+SCHED_POLL	kernel_sched.h	/^	SCHED_POLL, \/**< @brief The thread is polling a device *\/$/;"	e	enum:SCHED_CAUSE
+SCHED_QUANTUM	kernel_sched.h	/^	SCHED_QUANTUM, \/**< @brief The quantum has expired *\/$/;"	e	enum:SCHED_CAUSE
+SCHED_USER	kernel_sched.h	/^	SCHED_USER \/**< @brief User-space code called yield *\/$/;"	e	enum:SCHED_CAUSE
+SERIAL_RX_READY	bios.h	/^	SERIAL_RX_READY,	\/**< Raised when data is available for reading $/;"	e	enum:Interrupt
+SERIAL_TIMEOUT	bios.c	107;"	d	file:
+SERIAL_TX_READY	bios.h	/^	SERIAL_TX_READY,	\/**< Raised when a serial port is ready to accept $/;"	e	enum:Interrupt
+SHUTDOWN_BOTH	tinyos.h	/^  SHUTDOWN_BOTH=3     \/**< Shut down both directions. *\/$/;"	e	enum:__anon12
+SHUTDOWN_READ	tinyos.h	/^  SHUTDOWN_READ=1,    \/**< Shut down the read direction. *\/$/;"	e	enum:__anon12
+SHUTDOWN_WRITE	tinyos.h	/^  SHUTDOWN_WRITE=2,   \/**< Shut down the write direction. *\/$/;"	e	enum:__anon12
+STOPPED	kernel_sched.h	/^	STOPPED, \/**< @brief A blocked thread   *\/$/;"	e	enum:__anon5
+SUITE_FUNC	unit_testing.h	/^typedef enum { NO_FUNC, BARE_FUNC, BOOT_FUNC, SUITE_FUNC } Test_type;$/;"	e	enum:__anon13
+SYSCALL	kernel_sys.c	25;"	d	file:
+SYSCALL	kernel_sys.h	35;"	d
+SYSCALL	kernel_sys.h	44;"	d
+SYSCALLS	kernel_sys.h	7;"	d
+SYSCALLV	kernel_sys.c	36;"	d	file:
+SYSCALLV	kernel_sys.h	39;"	d
+SYSCALLV	kernel_sys.h	45;"	d
+SYSTEM_PAGE_SIZE	kernel_sched.c	89;"	d	file:
+Shell	tinyos_shell.c	/^int Shell(size_t argc, const char** argv)$/;"	f
+SymposiumOfProcesses	symposium.c	/^int SymposiumOfProcesses(int argl, void* args)$/;"	f
+SymposiumOfThreads	symposium.c	/^int SymposiumOfThreads(int argl, void* args)$/;"	f
+SymposiumTable	symposium.h	/^} SymposiumTable;$/;"	t	typeref:struct:__anon3
+SymposiumTable_destroy	symposium.c	/^void SymposiumTable_destroy(SymposiumTable* table)$/;"	f
+SymposiumTable_init	symposium.c	/^void SymposiumTable_init(SymposiumTable* table, symposium_t* symp)$/;"	f
+SymposiumTable_philosopher	symposium.c	/^void SymposiumTable_philosopher(SymposiumTable* S, int i)$/;"	f
+Symposium_proc	tinyos_shell.c	/^int Symposium_proc(size_t argc, const char** argv)$/;"	f
+Symposium_thr	tinyos_shell.c	/^int Symposium_thr(size_t argc, const char** argv)$/;"	f
+SystemInfo	tinyos_shell.c	/^int SystemInfo(size_t argc, const char** argv)$/;"	f
+TAB	unit_testing.c	/^static inline void TAB() {$/;"	f	file:
+TCB	kernel_sched.h	/^} TCB;$/;"	t	typeref:struct:thread_control_block
+TCB	util.h	/^typedef struct thread_control_block TCB;	\/**< @brief Forward declaration *\/$/;"	t	typeref:struct:thread_control_block
+TERM	bios.c	/^static terminal TERM[MAX_TERMINALS];$/;"	v	file:
+TEST_SUITE	unit_testing.h	359;"	d
+THINKING	symposium.h	/^typedef enum { NOTHERE=0, THINKING, HUNGRY, EATING } PHIL;$/;"	e	enum:__anon1
+THREAD_SIZE	kernel_sched.c	95;"	d	file:
+THREAD_STACK_SIZE	kernel_sched.h	137;"	d
+THREAD_TCB_SIZE	kernel_sched.c	92;"	d	file:
+TIMEOUT_LIST	kernel_sched.c	/^rlnode TIMEOUT_LIST; \/* The list of threads with a timeout *\/$/;"	v
+Task	tinyos.h	/^typedef int (*Task)(int, void*);$/;"	t
+Test	unit_testing.h	/^typedef struct Test$/;"	s
+Test	unit_testing.h	/^} Test;$/;"	t	typeref:struct:Test
+Test_type	unit_testing.h	/^typedef enum { NO_FUNC, BARE_FUNC, BOOT_FUNC, SUITE_FUNC } Test_type;$/;"	t	typeref:enum:__anon13
+Thread_phase	kernel_sched.h	/^} Thread_phase;$/;"	t	typeref:enum:__anon6
+Thread_state	kernel_sched.h	/^} Thread_state;$/;"	t	typeref:enum:__anon5
+Thread_type	kernel_sched.h	/^} Thread_type;$/;"	t	typeref:enum:__anon7
+Tid_t	tinyos.h	/^typedef uintptr_t Tid_t;$/;"	t
+TimerDuration	bios.h	/^typedef uint64_t TimerDuration;$/;"	t
+UNINDENT	unit_testing.c	/^static inline void UNINDENT() {$/;"	f	file:
+USR1_saved_sigaction	bios.c	/^static struct sigaction USR1_saved_sigaction;$/;"	v	typeref:struct:sigaction	file:
+USR1_sigaction	bios.c	/^static struct sigaction USR1_sigaction;$/;"	v	typeref:struct:sigaction	file:
+UTIL_H	util.h	3;"	d
+VALGRIND_FLAG	Makefile	/^VALGRIND_FLAG=$/;"	m
+VALGRIND_FLAG	Makefile	/^VALGRIND_FLAG=-DNVALGRIND$/;"	m
+WHITE	unit_testing.c	56;"	d	file:
+WordCount	tinyos_shell.c	/^int WordCount(size_t argc, const char** argv)$/;"	f
+Write	kernel_dev.h	/^    int (*Write)(void* this, const char* buf, unsigned int size);$/;"	m	struct:file_operations
+YELLOW	unit_testing.c	52;"	d	file:
+ZOMBIE	kernel_proc.h	/^  ZOMBIE  \/**< @brief The PID is held by a zombie *\/$/;"	e	enum:pid_state_e
+_UNIT_TESTING_H	unit_testing.h	3;"	d
+__KERNEL_CC_H	kernel_cc.h	8;"	d
+__KERNEL_DEV_H	kernel_dev.h	2;"	d
+__KERNEL_PROC_H	kernel_proc.h	2;"	d
+__KERNEL_SCHED_H	kernel_sched.h	7;"	d
+__KERNEL_STREAMS_H	kernel_streams.h	2;"	d
+__KERNEL_SYS_H	kernel_sys.h	2;"	d
+__SYMPOSIUM__H	symposium.h	3;"	d
+__TINYOSLIB_H	tinyoslib.h	3;"	d
+__TINYOS_H__	tinyos.h	3;"	d
+__core_restart	bios.c	/^static int __core_restart(uint c)$/;"	f	file:
+__cv_waiter	kernel_cc.c	/^typedef struct __cv_waiter {$/;"	s	file:
+__cv_waiter	kernel_cc.c	/^} __cv_waiter;$/;"	t	typeref:struct:__cv_waiter	file:
+__default_test	unit_testing.c	/^static const Test* __default_test;$/;"	v	file:
+__rs_globals	tinyos_shell.c	/^struct __rs_globals$/;"	s	file:
+__stdio_ops	console.c	/^file_ops __stdio_ops = {$/;"	v
+__symp_argproc	tinyos_shell.c	/^static void __symp_argproc(size_t argc, const char** argv, symposium_t* symp)$/;"	f	file:
+accept_connection_assert_fail	validate_api.c	/^static int accept_connection_assert_fail(int argl, void* args) $/;"	f	file:
+acquire_FCB	kernel_streams.c	/^FCB* acquire_FCB()$/;"	f
+acquire_PCB	kernel_proc.c	/^PCB* acquire_PCB()$/;"	f
+active_conn	tinyos_shell.c	/^	size_t active_conn;$/;"	m	struct:__rs_globals	file:
+active_threads	kernel_sched.c	/^volatile unsigned int active_threads = 0;$/;"	v
+active_threads_spinlock	kernel_sched.c	/^Mutex active_threads_spinlock = MUTEX_INIT;$/;"	v
+adjust_symposium	symposium.c	/^void adjust_symposium(symposium_t* symp, int dBASE, int dGAP)$/;"	f
+alarm_handler	bios_example3.c	/^void alarm_handler()$/;"	f
+alive	tinyos.h	/^  int alive;      \/**< @brief Non-zero if process is alive, zero if process is zombie. *\/$/;"	m	struct:procinfo
+allocate_thread	kernel_sched.c	/^void* allocate_thread(size_t size)$/;"	f
+argl	kernel_init.c	/^  int argl;$/;"	m	struct:__anon15	file:
+argl	kernel_proc.h	/^  int argl;               \/**< @brief The main thread's argument length *\/$/;"	m	struct:process_control_block
+argl	tinyos.h	/^  int argl;        \/**< @brief Argument length of main task. $/;"	m	struct:procinfo
+argl	unit_testing.c	/^	int argl;$/;"	m	struct:boot_test_descriptor	file:
+argl	validate_api.c	/^	int argl;$/;"	m	struct:test_cpu_rec	file:
+argp	unit_testing.c	/^static struct argp argp = { options, parse_options, args_doc, doc };$/;"	v	typeref:struct:argp	file:
+argp_program_bug_address	unit_testing.c	/^const char *argp_program_bug_address =$/;"	v
+argp_program_version	unit_testing.c	/^const char *argp_program_version =$/;"	v
+args	kernel_init.c	/^  void* args;$/;"	m	struct:__anon15	file:
+args	kernel_proc.h	/^  void* args;             \/**< @brief The main thread's argument string *\/$/;"	m	struct:process_control_block
+args	tinyos.h	/^	char args[PROCINFO_MAX_ARGS_SIZE]; \/**< @brief The first $/;"	m	struct:procinfo
+args	unit_testing.c	/^	void* args;$/;"	m	struct:boot_test_descriptor	file:
+args	validate_api.c	/^	void* args;$/;"	m	struct:test_cpu_rec	file:
+args_doc	unit_testing.c	/^static char args_doc[] = " TEST  ... ";$/;"	v	file:
+argscount	util.h	/^static inline size_t argscount(int argl, void* args)$/;"	f
+argvlen	util.h	/^static inline size_t argvlen(size_t argc, const char** argv)$/;"	f
+argvpack	util.h	/^static inline size_t argvpack(void* args, size_t argc, const char** argv)$/;"	f
+argvunpack	util.h	/^static inline void* argvunpack(size_t argc, const char** argv, int argl, void* args)$/;"	f
+bad_child	validate_api.c	/^static int bad_child(int argl, void* args)$/;"	f	file:
+bare	unit_testing.h	/^		void (*bare)(void*);$/;"	m	union:Test::__anon14
+barrier	tinyoslib.h	/^typedef struct barrier {$/;"	s
+barrier	tinyoslib.h	/^} barrier;$/;"	t	typeref:struct:barrier
+bios_cancel_timer	bios.c	/^TimerDuration bios_cancel_timer()$/;"	f
+bios_clock	bios.c	/^TimerDuration bios_clock()$/;"	f
+bios_read_serial	bios.c	/^int bios_read_serial(uint serial, char* ptr)$/;"	f
+bios_serial_funcs	bios_example5.c	/^cookie_io_functions_t bios_serial_funcs = {$/;"	v
+bios_serial_interrupt_core	bios.c	/^void bios_serial_interrupt_core(uint serial, Interrupt intno, uint coreid)$/;"	f
+bios_serial_ports	bios.c	/^uint bios_serial_ports()$/;"	f
+bios_set_timer	bios.c	/^TimerDuration bios_set_timer(TimerDuration usec)$/;"	f
+bios_write_serial	bios.c	/^int bios_write_serial(uint serial, char value)$/;"	f
+bites	symposium.h	/^	int bites;			\/**< Number of bites each philosopher takes. *\/$/;"	m	struct:__anon2
+boot	kernel_init.c	/^void boot(uint ncores, uint nterm, Task boot_task, int argl, void* args)$/;"	f
+boot	unit_testing.h	/^		Task boot;$/;"	m	union:Test::__anon14
+boot_rec	kernel_init.c	/^} boot_rec;$/;"	v	typeref:struct:__anon15	file:
+boot_shell	tinyos_shell.c	/^int boot_shell(int argl, void* args)$/;"	f
+boot_symposium	mtask.c	/^int boot_symposium(int argl, void* args)$/;"	f
+boot_test_descriptor	unit_testing.c	/^struct  boot_test_descriptor $/;"	s	file:
+boot_test_wrapper	unit_testing.c	/^void boot_test_wrapper(void* arg) $/;"	f
+boot_tinyos_kernel	kernel_init.c	/^void boot_tinyos_kernel()$/;"	f
+bootfunc	bios.c	/^	interrupt_handler* bootfunc;$/;"	m	struct:core	file:
+bootfunc	bios.h	/^	interrupt_handler* bootfunc;$/;"	m	struct:vm_config
+bootfunc	bios_example1.c	/^void bootfunc() {$/;"	f
+bootfunc	bios_example2.c	/^void bootfunc() {$/;"	f
+bootfunc	bios_example3.c	/^void bootfunc() {$/;"	f
+bootfunc	bios_example4.c	/^void bootfunc()$/;"	f
+bootfunc	bios_example5.c	/^void bootfunc()$/;"	f
+bootfunc	unit_testing.c	/^	Task bootfunc;$/;"	m	struct:boot_test_descriptor	file:
+build_list	test_util.c	/^void build_list(rlnode* L, rlnode* from, rlnode* to, void* key, size_t esize) $/;"	f
+ccb	util.h	/^    CCB* ccb;$/;"	m	union:resource_list_node::__anon9
+cctx	kernel_sched.c	/^CCB cctx[MAX_CORES];$/;"	v
+check_transfer	validate_api.c	/^void check_transfer(Fid_t from, Fid_t to)$/;"	f
+checkargs	tinyos_shell.c	67;"	d	file:
+checked_read	validate_api.c	/^void checked_read(Fid_t fid, const char* message)$/;"	f
+checked_write	validate_api.c	/^void checked_write(Fid_t fid, const char* message)$/;"	f
+child_exit	kernel_proc.h	/^  CondVar child_exit;     \/**< @brief Condition variable for @c WaitChild. $/;"	m	struct:process_control_block
+children_list	kernel_proc.h	/^  rlnode children_list;   \/**< @brief List of children *\/$/;"	m	struct:process_control_block
+children_node	kernel_proc.h	/^  rlnode children_node;   \/**< @brief Intrusive node for @c children_list *\/$/;"	m	struct:process_control_block
+cleanup_zombie	kernel_proc.c	/^static void cleanup_zombie(PCB* pcb, int* status)$/;"	f	file:
+close_signalfd	bios.c	/^static void close_signalfd(int sfd)$/;"	f	file:
+cmdname	tinyos_shell.c	/^struct { const char * cmdname; Program prog; uint nargs; const char* help; } $/;"	m	struct:__anon16	file:
+cmpint	unit_testing.c	/^static int cmpint(const void* ap, const void* bp) {$/;"	f	file:
+complete	unit_testing.c	/^	int complete;     	\/* Flag that the VM will not access the terminal any more. *\/$/;"	m	struct:proxy_daemon	file:
+compute_child	validate_api.c	/^int compute_child(int argl, void* args)$/;"	f
+con	bios.c	/^	io_device con, kbd;            \/* fds for terminal fifos *\/$/;"	m	struct:terminal	file:
+con	unit_testing.c	/^	proxy_daemon con, kbd;$/;"	m	struct:term_proxy	file:
+con_proc	unit_testing.c	/^void con_proc(proxy_daemon* this, const char* pattern)$/;"	f
+confd	terminal.c	/^int confd, kbdfd;  \/* The pipe file descriptors *\/$/;"	v
+conn_done	tinyos_shell.c	/^	CondVar conn_done;$/;"	m	struct:__rs_globals	file:
+conn_id_counter	tinyos_shell.c	/^	size_t conn_id_counter;$/;"	m	struct:__rs_globals	file:
+connect_sockets	validate_api.c	/^struct connect_sockets$/;"	s	file:
+connect_sockets	validate_api.c	/^void connect_sockets(Fid_t sock1, Fid_t lsock, Fid_t* sock2, port_t port)$/;"	f
+connect_sockets_connect_process	validate_api.c	/^static int connect_sockets_connect_process(int argl, void* args) {$/;"	f	file:
+connected	terminal.c	/^const char* connected = "\\033[5;40;1;37m   *** CONNECTED ***   \\033[0m\\n";$/;"	v
+context	kernel_sched.h	/^	cpu_context_t context; \/**< @brief The thread context *\/$/;"	m	struct:thread_control_block
+copyarg_child	validate_api.c	/^static int copyarg_child(int argl, void* args)$/;"	f	file:
+core	bios.c	/^typedef struct core$/;"	s	file:
+core	validate_api.c	/^	uint core;$/;"	m	struct:test_cpu_rec	file:
+core_barrier	bios.c	/^static pthread_barrier_t system_barrier, core_barrier;$/;"	v	file:
+core_control_block	kernel_sched.h	/^typedef struct core_control_block {$/;"	s
+core_list	unit_testing.h	/^	int core_list[MAX_CORES];$/;"	m	struct:program_arguments
+core_signal_set	bios.c	/^static sigset_t core_signal_set;$/;"	v	file:
+core_thread	bios.c	/^static void* core_thread(void* _core)$/;"	f	file:
+cores	bios.h	/^	uint cores;$/;"	m	struct:vm_config
+count	tinyoslib.h	/^	unsigned int count, epoch;$/;"	m	struct:barrier
+cpu_context_t	bios.h	/^typedef ucontext_t cpu_context_t;$/;"	t
+cpu_core_barrier_sync	bios.c	/^void cpu_core_barrier_sync()$/;"	f
+cpu_core_halt	bios.c	/^void cpu_core_halt()$/;"	f
+cpu_core_id	bios.c	/^_Thread_local uint cpu_core_id;$/;"	v
+cpu_core_restart	bios.c	/^void cpu_core_restart(uint c)$/;"	f
+cpu_core_restart_all	bios.c	/^void cpu_core_restart_all()$/;"	f
+cpu_core_restart_one	bios.c	/^void cpu_core_restart_one()$/;"	f
+cpu_cores	bios.c	/^uint cpu_cores()$/;"	f
+cpu_disable_interrupts	bios.c	/^int cpu_disable_interrupts()$/;"	f
+cpu_enable_interrupts	bios.c	/^void cpu_enable_interrupts()$/;"	f
+cpu_ici	bios.c	/^void cpu_ici(uint core)$/;"	f
+cpu_initialize_context	bios.c	/^void cpu_initialize_context(cpu_context_t* ctx, void* ss_sp, size_t ss_size, void (*ctx_func)())$/;"	f
+cpu_interrupt_handler	bios.c	/^void cpu_interrupt_handler(Interrupt interrupt, interrupt_handler handler)$/;"	f
+cpu_interrupts_enabled	bios.c	/^int cpu_interrupts_enabled()$/;"	f
+cpu_swap_context	bios.c	/^void cpu_swap_context(cpu_context_t* oldctx, cpu_context_t* newctx)$/;"	f
+create_join_thread_flag	validate_api.c	/^static int create_join_thread_flag;$/;"	v	file:
+create_join_thread_task	validate_api.c	/^static int create_join_thread_task(int argl, void* args) {$/;"	f	file:
+cur_thread	kernel_sched.c	/^TCB* cur_thread()$/;"	f
+curr_cause	kernel_sched.h	/^	enum SCHED_CAUSE curr_cause; \/**< @brief The endcause for the current time-slice *\/$/;"	m	struct:thread_control_block	typeref:enum:thread_control_block::SCHED_CAUSE
+curr_core	bios.c	/^static inline Core* curr_core() {$/;"	f	file:
+current_tests_available	unit_testing.c	/^static int current_tests_available = 0;$/;"	v	file:
+current_thread	kernel_sched.h	/^	TCB* current_thread; \/**< @brief Points to the thread currently owning the core *\/$/;"	m	struct:core_control_block
+cv	tinyoslib.h	/^	CondVar cv;$/;"	m	struct:barrier
+cv	validate_api.c	/^	CondVar* cv;$/;"	m	struct:long_blocking_args	file:
+cv_signal	kernel_cc.c	/^static inline void cv_signal(CondVar* cv)$/;"	f	file:
+cv_wait	kernel_cc.c	/^static int cv_wait(Mutex* mutex, CondVar* cv, $/;"	f	file:
+cyclic_joins	validate_api.c	/^struct cyclic_joins$/;"	s	file:
+cyclic_joins_join_thread	validate_api.c	/^static int cyclic_joins_join_thread(int argl, void* args) {$/;"	f	file:
+cyclic_joins_main_thread	validate_api.c	/^static int cyclic_joins_main_thread(int argl, void* args) $/;"	f	file:
+data_consumer	validate_api.c	/^int data_consumer(int argl, void* args) $/;"	f
+data_producer	validate_api.c	/^int data_producer(int argl, void* args)$/;"	f
+dcb	util.h	/^    DCB* dcb;$/;"	m	union:resource_list_node::__anon9
+description	unit_testing.h	/^	const char* description;			\/**< Human-readable, for printing *\/$/;"	m	struct:Test
+detach_after_join_joined_thread	validate_api.c	/^int detach_after_join_joined_thread(int argl, void* args) {$/;"	f
+detach_after_join_joiner_thread	validate_api.c	/^int detach_after_join_joiner_thread(int argl, void* args) $/;"	f
+detach_after_join_main_thread	validate_api.c	/^int detach_after_join_main_thread(int argl, void* args) $/;"	f
+detach_main_thread	validate_api.c	/^int detach_main_thread(int argl, void* args) {$/;"	f
+detach_notmain_thread	validate_api.c	/^int detach_notmain_thread(int argl, void* args) {$/;"	f
+dev_fops	kernel_dev.h	/^  file_ops dev_fops;	\/**< @brief Device operations$/;"	m	struct:device_control_block
+device_control_block	kernel_dev.h	/^typedef struct device_control_block$/;"	s
+device_no	kernel_dev.c	/^uint device_no(Device_type major)$/;"	f
+device_open	kernel_dev.c	/^int device_open(Device_type major, uint minor, void** obj, file_ops** ops)$/;"	f
+devno	kernel_dev.c	/^  uint devno;$/;"	m	struct:serial_device_control_block	file:
+devnum	kernel_dev.h	/^  uint devnum;           \/**< @brief Number of devices for this major number.$/;"	m	struct:device_control_block
+devtable	kernel_dev.c	/^DCB devtable[DEV_MAX];$/;"	v
+disconnected	terminal.c	/^const char* disconnected = "\\n\\033[5;41;1;37m   *** DISCONNECTED ***   \\033[0m\\n";$/;"	v
+dispatch_interrupts	bios.c	/^static inline void dispatch_interrupts(Core* core)$/;"	f	file:
+do_timeout	validate_api.c	/^static int do_timeout(int argl, void* args) {$/;"	f	file:
+doc	unit_testing.c	/^static char doc[] =$/;"	v	file:
+drain_signalfd	bios.c	/^static inline void drain_signalfd(int sfd)$/;"	f	file:
+dying_child	validate_api.c	/^static int dying_child(int arg, void* args)$/;"	f	file:
+eat	symposium.c	/^void eat(int fmin, int fmax)  { think(fmin, fmax); }$/;"	f
+epoch	tinyoslib.h	/^	unsigned int count, epoch;$/;"	m	struct:barrier
+err	terminal.c	35;"	d	file:
+errst	terminal.c	/^int errst[4];  \/* Whether error was detected *\/$/;"	v
+exec_wrapper	tinyoslib.c	/^static int exec_wrapper(int argl, void* args)$/;"	f	file:
+execute	unit_testing.c	/^int execute(void (*procfunc)(void*), void* arg, unsigned int timeout)$/;"	f
+execute_boot	unit_testing.c	/^int execute_boot(int ncores, int nterm, Task bootfunc, int argl, void* args, unsigned int timeout)$/;"	f
+execute_fork	unit_testing.c	/^int execute_fork(void (*procfunc)(void*), void* arg, unsigned int timeout)$/;"	f
+execute_nofork	unit_testing.c	/^int execute_nofork(void (*procfunc)(void*), void* arg, unsigned int timeout)$/;"	f
+exit_many_threads_mthread	validate_api.c	/^static int exit_many_threads_mthread(int argl, void* args){$/;"	f	file:
+exit_many_threads_task	validate_api.c	/^static int exit_many_threads_task(int argl, void* args) {$/;"	f	file:
+exited_list	kernel_proc.h	/^  rlnode exited_list;     \/**< @brief List of exited children *\/$/;"	m	struct:process_control_block
+exited_node	kernel_proc.h	/^  rlnode exited_node;     \/**< @brief Intrusive node for @c exited_list *\/$/;"	m	struct:process_control_block
+exiting_child	validate_api.c	/^int exiting_child(int arg, void* args) {$/;"	f
+exitval	kernel_proc.h	/^  int exitval;            \/**< @brief The exit value of the process *\/$/;"	m	struct:process_control_block
+expect	unit_testing.c	/^void expect(uint term, const char* pattern)$/;"	f
+fcb	util.h	/^    FCB* fcb;$/;"	m	union:resource_list_node::__anon9
+fd	bios.c	/^	int fd;              		\/* file descriptor *\/$/;"	m	struct:io_device	file:
+fd	unit_testing.c	/^	int fd;				\/* The fd *\/$/;"	m	struct:proxy_daemon	file:
+fds	bios.c	/^	fd_set fds[2];$/;"	m	struct:pic_selector	file:
+fds	terminal.c	/^struct pollfd fds[4] = {$/;"	v	typeref:struct:pollfd
+fibo	symposium.c	/^unsigned int fibo(unsigned int n) \/* Very slow routine *\/$/;"	f
+fiborand	symposium.c	/^int fiborand(int fmin, int fmax) { return lrand48() % (fmax-fmin+1) + fmin; }$/;"	f
+fidopen	tinyoslib.c	/^FILE* fidopen(Fid_t fid, const char* mode)$/;"	f
+file_control_block	kernel_streams.h	/^typedef struct file_control_block$/;"	s
+file_operations	kernel_dev.h	/^typedef struct file_operations {$/;"	s
+file_ops	kernel_dev.h	/^} file_ops;$/;"	t	typeref:struct:file_operations
+find_test	unit_testing.c	/^static const struct Test* find_test(const char* name, const struct Test* test)$/;"	f	file:
+flag	validate_api.c	/^	int* flag;$/;"	m	struct:long_blocking_args	file:
+flip	terminal.c	33;"	d	file:
+fmax	symposium.h	/^	int fmin, fmax;		\/**< Values used by the Fibbonacci routines *\/$/;"	m	struct:__anon2
+fmin	symposium.h	/^	int fmin, fmax;		\/**< Values used by the Fibbonacci routines *\/$/;"	m	struct:__anon2
+fork	unit_testing.h	/^	int fork;$/;"	m	struct:program_arguments
+free_thread	kernel_sched.c	/^void free_thread(void* ptr, size_t size) { CHECK(munmap(ptr, size)); }$/;"	f
+free_thread	kernel_sched.c	/^void free_thread(void* ptr, size_t size) { free(ptr); }$/;"	f
+freelist_node	kernel_streams.h	/^  rlnode freelist_node;		\/**< @brief Intrusive list node *\/$/;"	m	struct:file_control_block
+gain	kernel_sched.c	/^void gain(int preempt)$/;"	f
+get_coarse_time	bios.c	/^static TimerDuration get_coarse_time()$/;"	f	file:
+get_fcb	kernel_streams.c	/^FCB* get_fcb(Fid_t fid)$/;"	f
+get_pcb	kernel_proc.c	/^PCB* get_pcb(Pid_t pid)$/;"	f
+get_pid	kernel_proc.c	/^Pid_t get_pid(PCB* pcb)$/;"	f
+get_std_stream	tinyoslib.c	/^static FILE* get_std_stream(int fid, const char* mode)$/;"	f	file:
+get_timestamp	validate_api.c	/^unsigned int get_timestamp()$/;"	f
+getint	tinyos_shell.c	71;"	d	file:
+getprog	tinyos_shell.c	80;"	d	file:
+getprog_byname	tinyos_shell.c	/^static inline int getprog_byname(const char* name) {$/;"	f	file:
+greeted_child	validate_api.c	/^static int greeted_child(int argl, void* args)$/;"	f	file:
+gt5	test_util.c	/^static int gt5(rlnode* p) { $/;"	f	file:
+halt_vector	bios.c	/^static _Atomic uint32_t halt_vector;$/;"	v	file:
+handle_alarm	bios_example4.c	/^void handle_alarm()$/;"	f
+hanoi	tinyos_shell.c	/^void hanoi(int n, int a, int b, int c)$/;"	f
+help	tinyos_shell.c	/^struct { const char * cmdname; Program prog; uint nargs; const char* help; } $/;"	m	struct:__anon16	file:
+hlt_count	bios.c	/^	volatile uintptr_t hlt_count;$/;"	m	struct:core	file:
+hlt_time	bios.c	/^	volatile TimerDuration hlt_time;$/;"	m	struct:core	file:
+hungry	symposium.h	/^	CondVar* hungry;    \/**< hungry[i] i=...N: condition var for philosophers *\/$/;"	m	struct:__anon3
+i	symposium.c	/^typedef struct { int i; SymposiumTable* S; } philosopher_args;$/;"	m	struct:__anon4	file:
+ici_handler	kernel_sched.c	/^void ici_handler()$/;"	f
+id	bios.c	/^	uint id;$/;"	m	struct:core	file:
+id	kernel_sched.h	/^	uint id; \/**< @brief The core id *\/$/;"	m	struct:core_control_block
+idle_thread	kernel_sched.c	/^static void idle_thread()$/;"	f	file:
+idle_thread	kernel_sched.h	/^	TCB idle_thread; \/**< @brief Used by the scheduler to handle the core's idle thread *\/$/;"	m	struct:core_control_block
+init_control	bios.c	/^static pthread_once_t init_control = PTHREAD_ONCE_INIT;$/;"	v	file:
+init_task	kernel_init.c	/^  Task init_task;$/;"	m	struct:__anon15	file:
+initialize	bios.c	/^static void initialize()$/;"	f	file:
+initialize_PCB	kernel_proc.c	/^static inline void initialize_PCB(PCB* pcb)$/;"	f	file:
+initialize_devices	kernel_dev.c	/^void initialize_devices()$/;"	f
+initialize_files	kernel_streams.c	/^void initialize_files()$/;"	f
+initialize_processes	kernel_proc.c	/^void initialize_processes()$/;"	f
+initialize_scheduler	kernel_sched.c	/^void initialize_scheduler()$/;"	f
+int_core	bios.c	/^	Core* volatile int_core;	\/* core to receive interrupts *\/$/;"	m	struct:io_device	file:
+interrupt_core	bios.c	/^static inline void interrupt_core(Core* core)$/;"	f	file:
+interrupt_handler	bios.h	/^typedef void interrupt_handler();$/;"	t
+interrupt_pic_thread	bios.c	/^static inline void interrupt_pic_thread()$/;"	f	file:
+intr_fetch_clear	bios.c	/^static inline int intr_fetch_clear(Core* core, Interrupt intno)$/;"	f	file:
+intr_fetch_lowest	bios.c	/^static inline int intr_fetch_lowest(Core* core, Interrupt* intp)$/;"	f	file:
+intr_fetch_set	bios.c	/^static inline int intr_fetch_set(Core* core, Interrupt intno)$/;"	f	file:
+intr_pending	bios.c	/^	volatile uint32_t intr_pending;$/;"	m	struct:core	file:
+intvec	bios.c	/^	interrupt_handler* intvec[maximum_interrupt_no];$/;"	m	struct:core	file:
+io_device	bios.c	/^typedef struct io_device$/;"	s	file:
+io_device	bios.c	/^} io_device;$/;"	t	typeref:struct:io_device	file:
+io_device_check	bios.c	/^static int io_device_check(io_device* dev)$/;"	f	file:
+io_device_destroy	bios.c	/^static int io_device_destroy(io_device* this)$/;"	f	file:
+io_device_init	bios.c	/^static void io_device_init(io_device* this, int fd, io_direction iodir)$/;"	f	file:
+io_device_read	bios.c	/^static int io_device_read(io_device* this, char* ptr)$/;"	f	file:
+io_device_ready	bios.c	/^static int io_device_ready(int fd, io_direction dir) {$/;"	f	file:
+io_device_write	bios.c	/^static int io_device_write(io_device* this, char value)$/;"	f	file:
+io_direction	bios.c	/^typedef enum io_direction$/;"	g	file:
+io_direction	bios.c	/^} io_direction;$/;"	t	typeref:enum:io_direction	file:
+io_loop	terminal.c	/^void io_loop()$/;"	f
+iodir	bios.c	/^	io_direction iodir;  		\/* device direction *\/$/;"	m	struct:io_device	file:
+irq_count	bios.c	/^	volatile uintptr_t irq_count;$/;"	m	struct:core	file:
+irq_delivered	bios.c	/^	volatile uintptr_t irq_delivered[maximum_interrupt_no];$/;"	m	struct:core	file:
+irq_raised	bios.c	/^	volatile uintptr_t irq_raised[maximum_interrupt_no];$/;"	m	struct:core	file:
+isDebuggerAttached	unit_testing.c	/^int isDebuggerAttached()$/;"	f
+is_rlist_empty	util.h	/^static inline int is_rlist_empty(rlnode* a) { return a==a->next; }$/;"	f
+its	kernel_sched.h	/^	TimerDuration its; \/**< @brief Initial time-slice for this thread *\/$/;"	m	struct:thread_control_block
+join_main_thread	validate_api.c	/^static int join_main_thread(int argl, void* args) {$/;"	f	file:
+join_many_threads_main	validate_api.c	/^int join_many_threads_main(int argl, void* args) {$/;"	f
+join_notmain_thread	validate_api.c	/^static int join_notmain_thread(int argl, void* args) {$/;"	f	file:
+joined_thread	validate_api.c	/^static int joined_thread(int argl, void* args) {$/;"	f	file:
+joiner_thread	validate_api.c	/^static int joiner_thread(int argl, void* args) {$/;"	f	file:
+kbd	bios.c	/^	io_device con, kbd;            \/* fds for terminal fifos *\/$/;"	m	struct:terminal	file:
+kbd	unit_testing.c	/^	proxy_daemon con, kbd;$/;"	m	struct:term_proxy	file:
+kbd_proc	unit_testing.c	/^void kbd_proc(proxy_daemon* this, const char* pattern)$/;"	f
+kbdfd	terminal.c	/^int confd, kbdfd;  \/* The pipe file descriptors *\/$/;"	v
+kernel_broadcast	kernel_cc.c	/^void kernel_broadcast(CondVar* cv) $/;"	f
+kernel_lock	kernel_cc.c	/^void kernel_lock()$/;"	f
+kernel_mutex	kernel_cc.c	/^static Mutex kernel_mutex = MUTEX_INIT;$/;"	v	file:
+kernel_sem	kernel_cc.c	/^static int kernel_sem = 1;$/;"	v	file:
+kernel_sem_cv	kernel_cc.c	/^static CondVar kernel_sem_cv = COND_INIT;$/;"	v	file:
+kernel_signal	kernel_cc.c	/^void kernel_signal(CondVar* cv) $/;"	f
+kernel_sleep	kernel_cc.c	/^void kernel_sleep(Thread_state newstate, enum SCHED_CAUSE cause)$/;"	f
+kernel_timedwait	kernel_cc.h	59;"	d
+kernel_unlock	kernel_cc.c	/^void kernel_unlock()$/;"	f
+kernel_wait	kernel_cc.h	57;"	d
+kernel_wait_wchan	kernel_cc.c	/^int kernel_wait_wchan(CondVar* cv, enum SCHED_CAUSE cause, $/;"	f
+last_cause	kernel_sched.h	/^	enum SCHED_CAUSE last_cause; \/**< @brief The endcause for the last time-slice *\/$/;"	m	struct:thread_control_block	typeref:enum:thread_control_block::SCHED_CAUSE
+last_int	bios.c	/^	TimerDuration last_int;	    \/* used by PIC for timeouts *\/$/;"	m	struct:io_device	file:
+level	validate_api.c	/^	int level;$/;"	m	struct:test_pid_rec	file:
+listener	tinyos_shell.c	/^	Tid_t listener;$/;"	m	struct:__rs_globals	file:
+listener_socket	tinyos_shell.c	/^	Fid_t listener_socket;$/;"	m	struct:__rs_globals	file:
+log	tinyos_shell.c	/^	rlnode log;$/;"	m	struct:__rs_globals	file:
+log_init	tinyos_shell.c	/^static void log_init(void* __globals)$/;"	f	file:
+log_message	tinyos_shell.c	/^static void log_message(void* __globals, const char* msg, ...)$/;"	f	file:
+log_print	tinyos_shell.c	/^static void log_print(void* __globals)$/;"	f	file:
+log_truncate	tinyos_shell.c	/^static void log_truncate(void* __globals)$/;"	f	file:
+logcount	tinyos_shell.c	/^	size_t logcount;$/;"	m	struct:__rs_globals	file:
+logrec	tinyos_shell.c	/^} logrec;$/;"	t	typeref:struct:__anon17	file:
+long_blocking	validate_api.c	/^static int long_blocking(int argl, void* args)$/;"	f	file:
+long_blocking2	validate_api.c	/^static int long_blocking2(int argl, void* args)$/;"	f	file:
+long_blocking_args	validate_api.c	/^struct long_blocking_args {$/;"	s	file:
+lsock	validate_api.c	/^	Fid_t sock1, lsock, *sock2;$/;"	m	struct:connect_sockets	file:
+m	validate_api.c	/^	Mutex* m;$/;"	m	struct:long_blocking_args	file:
+main	bios_example1.c	/^int main()$/;"	f
+main	bios_example2.c	/^int main()$/;"	f
+main	bios_example3.c	/^int main()$/;"	f
+main	bios_example4.c	/^int main()$/;"	f
+main	bios_example5.c	/^int main()$/;"	f
+main	mtask.c	/^int main(int argc, const char** argv) $/;"	f
+main	terminal.c	/^int main(int argc, char** argv)$/;"	f
+main	test_example.c	/^int main(int argc, char** argv)$/;"	f
+main	test_util.c	/^int main(int argc, char** argv)$/;"	f
+main	tinyos_shell.c	/^int main(int argc, const char** argv) $/;"	f
+main	validate_api.c	/^int main(int argc, char** argv)$/;"	f
+main_exit_cleanup_main_thread	validate_api.c	/^static int main_exit_cleanup_main_thread(int argl, void* args){$/;"	f	file:
+main_exit_cleanup_task	validate_api.c	/^static int main_exit_cleanup_task(int argl, void* args) {$/;"	f	file:
+main_task	kernel_proc.h	/^  Task main_task;         \/**< @brief The main thread's function *\/$/;"	m	struct:process_control_block
+main_task	tinyos.h	/^  Task main_task;  \/**< @brief The main task of the process. *\/$/;"	m	struct:procinfo
+main_thread	kernel_proc.h	/^  TCB* main_thread;       \/**< @brief The main thread *\/$/;"	m	struct:process_control_block
+mainloop	terminal.c	/^void mainloop(char* arg)$/;"	f
+make_list	test_util.c	/^static rlnode* make_list(rlnode* L, const char* data)$/;"	f	file:
+mark_time	validate_api.c	/^void mark_time(struct timeval* t)$/;"	f
+maxfd	bios.c	/^	int maxfd;$/;"	m	struct:pic_selector	file:
+maximum_interrupt_no	bios.h	/^	maximum_interrupt_no $/;"	e	enum:Interrupt
+message	tinyos_shell.c	/^	char message[0];$/;"	m	struct:__anon17	file:
+minimum_cores	unit_testing.h	/^	unsigned int minimum_cores;			\/**< Minimum no. of cores required. Default: 1 *\/$/;"	m	struct:Test
+minimum_terminals	unit_testing.h	/^	unsigned int minimum_terminals;		\/**< Minimum no. of terminals required. Default: 0 *\/$/;"	m	struct:Test
+mttid	validate_api.c	/^static Tid_t mttid;$/;"	v	file:
+mx	symposium.h	/^	Mutex mx;			\/**< Monitor mutex *\/$/;"	m	struct:__anon3
+mx	tinyos_shell.c	/^	Mutex mx;$/;"	m	struct:__rs_globals	file:
+mx	tinyoslib.h	/^	Mutex mx;$/;"	m	struct:barrier
+mx	unit_testing.c	/^	pthread_mutex_t mx; \/* Monitor mutex *\/$/;"	m	struct:proxy_daemon	file:
+myproc	validate_api.c	/^static int myproc(int argl, void* args) {$/;"	f	file:
+name	unit_testing.h	/^	const char* name;   				\/**< Test name *\/$/;"	m	struct:Test
+nargs	tinyos_shell.c	/^struct { const char * cmdname; Program prog; uint nargs; const char* help; } $/;"	m	struct:__anon16	file:
+ncore_list	unit_testing.h	/^	int ncore_list;		\/**< Size of `core_list` *\/$/;"	m	struct:program_arguments
+ncores	bios.c	/^static unsigned int ncores = 0;$/;"	v	file:
+ncores	unit_testing.c	/^	int ncores;$/;"	m	struct:boot_test_descriptor	file:
+ncores	validate_api.c	/^	uint ncores;$/;"	m	struct:test_cpu_rec	file:
+next	util.h	/^  rlnode_ptr next;	\/**< @brief Pointer to next node *\/$/;"	m	struct:resource_list_node
+node	kernel_cc.c	/^	rlnode node;				\/* become part of a ring *\/$/;"	m	struct:__cv_waiter	file:
+node	tinyos_shell.c	/^	rlnode node;$/;"	m	struct:__anon17	file:
+node	util.h	/^    rlnode_ptr node;$/;"	m	union:resource_list_node::__anon9
+noexit_cleanup_mthread	validate_api.c	/^int noexit_cleanup_mthread(int argl, void* args){$/;"	f
+noexit_cleanup_task	validate_api.c	/^int noexit_cleanup_task(int argl, void* args) {$/;"	f
+nterm	bios.c	/^static uint nterm = 0;$/;"	v	file:
+nterm	unit_testing.c	/^	int nterm;$/;"	m	struct:boot_test_descriptor	file:
+nterm	validate_api.c	/^	uint nterm;$/;"	m	struct:test_cpu_rec	file:
+nterm_list	unit_testing.h	/^	int nterm_list;		\/**< Size of `term_list` *\/$/;"	m	struct:program_arguments
+ntests	unit_testing.h	/^	int ntests;			\/**< Size of `tests` *\/$/;"	m	struct:program_arguments
+nulldev_close	kernel_dev.c	/^int nulldev_close(void* dev) $/;"	f
+nulldev_fops	kernel_dev.c	/^static file_ops nulldev_fops = {$/;"	v	file:
+nulldev_open	kernel_dev.c	/^void* nulldev_open(uint minor)$/;"	f
+nulldev_read	kernel_dev.c	/^int nulldev_read(void* dev, char *buf, unsigned int size)$/;"	f
+nulldev_write	kernel_dev.c	/^int nulldev_write(void* dev, const char* buf, unsigned int size)$/;"	f
+num	util.h	/^    intptr_t num;$/;"	m	union:resource_list_node::__anon9
+number_of_tests	unit_testing.c	/^	unsigned int number_of_tests;$/;"	m	struct:__anon8	file:
+obj	util.h	/^    void* obj;$/;"	m	union:resource_list_node::__anon9
+open_fifo	unit_testing.c	/^int open_fifo(const char* name, uint n)$/;"	f
+open_pipe	terminal.c	/^int open_pipe(const char* fname, int flags) {$/;"	f
+open_signalfd	bios.c	/^static int open_signalfd(sigset_t* set)$/;"	f	file:
+open_stream	kernel_streams.c	/^Fid_t open_stream(Device_type major, unsigned int minor)$/;"	f
+options	unit_testing.c	/^static struct argp_option options [] = {$/;"	v	typeref:struct:argp_option	file:
+orphan_grandchild	validate_api.c	/^static int orphan_grandchild(int argl, void* args)$/;"	f	file:
+owner_pcb	kernel_sched.h	/^	PCB* owner_pcb; \/**< @brief This is null for a free TCB *\/$/;"	m	struct:thread_control_block
+parent	kernel_proc.h	/^  PCB* parent;            \/**< @brief Parent's pcb. *\/$/;"	m	struct:process_control_block
+parse_int_list	unit_testing.c	/^static int parse_int_list(char* arg, int* nlen, int* nlist, int from, int to)$/;"	f	file:
+parse_options	unit_testing.c	/^parse_options(int key, char *arg, struct argp_state *state)$/;"	f	file:
+pat	unit_testing.c	/^	pthread_cond_t pat; \/* Signal that there is a new pattern, or that the VM is done. *\/$/;"	m	struct:proxy_daemon	file:
+pattern	unit_testing.c	/^	rlnode pattern; 	\/* The pattern list *\/$/;"	m	struct:proxy_daemon	file:
+pcb	util.h	/^    PCB* pcb; $/;"	m	union:resource_list_node::__anon9
+pcb_freelist	kernel_proc.c	/^static PCB* pcb_freelist;$/;"	v	file:
+pcv	validate_api.c	/^	CondVar* pcv;$/;"	m	struct:long_blocking_args	file:
+phase	kernel_sched.h	/^	Thread_phase phase; \/**< @brief The phase of the thread *\/$/;"	m	struct:thread_control_block
+philosopher_args	symposium.c	/^typedef struct { int i; SymposiumTable* S; } philosopher_args;$/;"	t	typeref:struct:__anon4	file:
+physical_cores	bios.c	/^static unsigned int physical_cores;$/;"	v	file:
+pic_add_fd	bios.c	/^static inline void pic_add_fd(pic_selector* ps, io_direction dir, int fd)$/;"	f	file:
+pic_add_io_device	bios.c	/^static inline void pic_add_io_device(pic_selector* ps, io_device* dev)$/;"	f	file:
+pic_add_terminal	bios.c	/^static inline void pic_add_terminal(pic_selector* ps, terminal* term)$/;"	f	file:
+pic_is_ready	bios.c	/^static inline int pic_is_ready(pic_selector* ps, io_direction dir, int fd)$/;"	f	file:
+pic_select	bios.c	/^static int pic_select(pic_selector* ps)$/;"	f	file:
+pic_selector	bios.c	/^typedef struct pic_selector$/;"	s	file:
+pic_selector	bios.c	/^} pic_selector;$/;"	t	typeref:struct:pic_selector	file:
+pic_selector_reset	bios.c	/^static void pic_selector_reset(pic_selector* ps)$/;"	f	file:
+pid	tinyos.h	/^	Pid_t pid;	    \/**< @brief The pid of the process. *\/$/;"	m	struct:procinfo
+pid	validate_api.c	/^	Pid_t pid;$/;"	m	struct:test_pid_rec	file:
+pid_returning_child	validate_api.c	/^static int pid_returning_child(int arg, void* args) {$/;"	f	file:
+pid_state	kernel_proc.h	/^} pid_state;$/;"	t	typeref:enum:pid_state_e
+pid_state_e	kernel_proc.h	/^typedef enum pid_state_e {$/;"	g
+pipe_s	tinyos.h	/^typedef struct pipe_s {$/;"	s
+pipe_t	tinyos.h	/^} pipe_t;$/;"	t	typeref:struct:pipe_s
+polled	terminal.c	36;"	d	file:
+port	tinyos_shell.c	/^	port_t port;$/;"	m	struct:__rs_globals	file:
+port	validate_api.c	/^	port_t port;$/;"	m	struct:connect_sockets	file:
+port_t	tinyos.h	/^typedef int16_t port_t;$/;"	t
+ppid	tinyos.h	/^	Pid_t ppid;     \/**< @brief The parent pid of the process.$/;"	m	struct:procinfo
+preempt_off	kernel_cc.h	103;"	d
+preempt_on	kernel_cc.h	108;"	d
+prev	util.h	/^  rlnode_ptr prev;  \/**< @brief Pointer to previous node *\/$/;"	m	struct:resource_list_node
+previous_thread	kernel_sched.h	/^	TCB* previous_thread; \/**< @brief Points to the thread that previously owned the core *\/$/;"	m	struct:core_control_block
+print_state	symposium.c	/^void print_state(int N, PHIL* state, const char* fmt, int ph)$/;"	f
+proc	unit_testing.c	/^	PatternProc proc;	\/* Pattern processor function *\/$/;"	m	struct:proxy_daemon	file:
+process_builtin	tinyos_shell.c	/^int process_builtin(int argc, const char** argv)$/;"	f
+process_control_block	kernel_proc.h	/^typedef struct process_control_block {$/;"	s
+process_count	kernel_proc.c	/^unsigned int process_count;$/;"	v
+process_line	tinyos_shell.c	/^int process_line(int argc, const char** argv)$/;"	f
+procinfo	tinyos.h	/^typedef struct procinfo$/;"	s
+procinfo	tinyos.h	/^} procinfo;$/;"	t	typeref:struct:procinfo
+prog	tinyos_shell.c	/^struct { const char * cmdname; Program prog; uint nargs; const char* help; } $/;"	m	struct:__anon16	file:
+program_arguments	unit_testing.h	/^extern struct program_arguments$/;"	s
+programs	tinyos_shell.c	/^int programs() {$/;"	f
+proxy_daemon	unit_testing.c	/^typedef struct proxy_daemon {$/;"	s	file:
+proxy_daemon	unit_testing.c	/^} proxy_daemon;$/;"	t	typeref:struct:proxy_daemon	file:
+pstate	kernel_proc.h	/^  pid_state  pstate;      \/**< @brief The pid state for this PCB *\/$/;"	m	struct:process_control_block
+quit	tinyos_shell.c	/^	int quit;$/;"	m	struct:__rs_globals	file:
+raise_interrupt	bios.c	/^static inline void raise_interrupt(Core* core, Interrupt intno) $/;"	f	file:
+read	tinyos.h	/^	Fid_t read;			\/**< The read end of the pipe *\/$/;"	m	struct:pipe_s
+read_serial	bios_example5.c	/^ssize_t read_serial(void *cookie, char *buf, size_t size)$/;"	f
+read_signalfd	bios.c	/^static inline int read_signalfd(int sfd, struct signalfd_siginfo* sfdinfo)$/;"	f	file:
+ready	bios.c	/^	volatile int ready;  		\/* ready flag *\/$/;"	m	struct:io_device	file:
+ready	terminal.c	34;"	d	file:
+rec	validate_api.c	/^	struct test_cpu_rec* rec;$/;"	m	struct:test_cpu_rec	typeref:struct:test_cpu_rec::test_cpu_rec	file:
+recv_message	tinyos_shell.c	/^static int recv_message(Fid_t sock, void* buf, size_t len)$/;"	f	file:
+refcount	kernel_streams.h	/^  uint refcount;  			\/**< @brief Reference counter. *\/$/;"	m	struct:file_control_block
+register_test	unit_testing.c	/^int register_test(const Test* test)$/;"	f
+release_FCB	kernel_streams.c	/^void release_FCB(FCB* fcb)$/;"	f
+release_PCB	kernel_proc.c	/^void release_PCB(PCB* pcb)$/;"	f
+release_TCB	kernel_sched.c	/^void release_TCB(TCB* tcb)$/;"	f
+remove_from_ring	kernel_cc.c	/^static inline void remove_from_ring(CondVar* cv, __cv_waiter* w)$/;"	f	file:
+removed	kernel_cc.c	/^	sig_atomic_t removed;		\/* this is set if the waiter is removed $/;"	m	struct:__cv_waiter	file:
+resource_list_node	util.h	/^typedef struct resource_list_node {$/;"	s
+rl_splice	util.h	/^static inline rlnode* rl_splice(rlnode *a, rlnode *b)$/;"	f
+rlist_append	util.h	/^static inline void rlist_append(rlnode* ldest, rlnode* lsrc)$/;"	f
+rlist_equal	util.h	/^static inline int rlist_equal(rlnode* L1, rlnode* L2)$/;"	f
+rlist_find	util.h	/^static inline rlnode* rlist_find(rlnode* List, void* key, rlnode* fail)$/;"	f
+rlist_len	util.h	/^static inline size_t rlist_len(rlnode* list) $/;"	f
+rlist_pop_back	util.h	/^static inline rlnode* rlist_pop_back(rlnode* list) { return rl_splice(list, list->prev); }$/;"	f
+rlist_pop_front	util.h	/^static inline rlnode* rlist_pop_front(rlnode* list) { return rl_splice(list, list->next); }$/;"	f
+rlist_prepend	util.h	/^static inline void rlist_prepend(rlnode* ldest, rlnode* lsrc)$/;"	f
+rlist_push_back	util.h	/^static inline void rlist_push_back(rlnode* list, rlnode* node) { rl_splice(list->prev, node); }$/;"	f
+rlist_push_front	util.h	/^static inline void rlist_push_front(rlnode* list, rlnode* node) { rl_splice(list, node); }$/;"	f
+rlist_remove	util.h	/^static inline rlnode* rlist_remove(rlnode* a) { rl_splice(a, a->prev); return a; }$/;"	f
+rlist_reverse	util.h	/^static inline void rlist_reverse(rlnode* l)$/;"	f
+rlist_select	util.h	/^static inline void rlist_select(rlnode* Lsrc, rlnode* Ldest, int (*pred)(rlnode*))$/;"	f
+rlnode	util.h	/^} rlnode;$/;"	t	typeref:struct:resource_list_node
+rlnode_init	util.h	/^static inline rlnode* rlnode_init(rlnode* p, void* ptr)  $/;"	f
+rlnode_new	util.h	/^static inline rlnode* rlnode_new(rlnode* p) $/;"	f
+rlnode_ptr	util.h	/^typedef struct resource_list_node * rlnode_ptr;$/;"	t	typeref:struct:resource_list_node
+rlnode_swap	util.h	/^static inline void rlnode_swap(rlnode_ptr *p, rlnode_ptr *q) $/;"	f
+rsrv_client	tinyos_shell.c	/^static int rsrv_client(int sock, void* __globals)$/;"	f	file:
+rsrv_listener_thread	tinyos_shell.c	/^static int rsrv_listener_thread(int port, void* __globals)$/;"	f	file:
+rsrv_process	tinyos_shell.c	/^static int rsrv_process(size_t argc, const char** argv)$/;"	f	file:
+rst_count	bios.c	/^	volatile uintptr_t rst_count;$/;"	m	struct:core	file:
+rts	kernel_sched.h	/^	TimerDuration rts; \/**< @brief Remaining time-slice for this thread *\/$/;"	m	struct:thread_control_block
+run_boot_test	unit_testing.c	/^int run_boot_test(const Test* test, uint ncores, uint nterm, int argl, void* args)$/;"	f
+run_get_status	validate_api.c	/^int run_get_status(Task task, int argl, void* args)$/;"	f
+run_program	unit_testing.c	/^int run_program(int argc, char**argv, const Test* default_test)$/;"	f
+run_scheduler	kernel_sched.c	/^void run_scheduler()$/;"	f
+run_suite	unit_testing.c	/^int run_suite(const char* name, const Test** tests, Results* results)$/;"	f
+run_test	unit_testing.c	/^int run_test(const Test* test)$/;"	f
+run_time	bios.c	/^	volatile TimerDuration run_time;$/;"	m	struct:core	file:
+rx_ready	kernel_dev.c	/^  CondVar rx_ready;$/;"	m	struct:serial_device_control_block	file:
+saved_in	tinyoslib.c	/^FILE *saved_in = NULL, *saved_out = NULL;$/;"	v
+saved_out	tinyoslib.c	/^FILE *saved_in = NULL, *saved_out = NULL;$/;"	v
+savefid	tinyos_shell.c	/^static inline Fid_t savefid(Fid_t fsaved)$/;"	f	file:
+sched_make_ready	kernel_sched.c	/^static void sched_make_ready(TCB* tcb)$/;"	f	file:
+sched_node	kernel_sched.h	/^	rlnode sched_node; \/**< @brief Node to use when queueing in the scheduler queue *\/$/;"	m	struct:thread_control_block
+sched_queue_add	kernel_sched.c	/^static void sched_queue_add(TCB* tcb)$/;"	f	file:
+sched_queue_select	kernel_sched.c	/^static TCB* sched_queue_select(TCB* current)$/;"	f	file:
+sched_register_timeout	kernel_sched.c	/^static void sched_register_timeout(TCB* tcb, TimerDuration timeout)$/;"	f	file:
+sched_spinlock	kernel_sched.c	/^Mutex sched_spinlock = MUTEX_INIT; \/* spinlock for scheduler queue *\/$/;"	v
+sched_wakeup_expired_timeouts	kernel_sched.c	/^static void sched_wakeup_expired_timeouts()$/;"	f	file:
+send_message	tinyos_shell.c	/^static void send_message(Fid_t sock, void* buf, size_t len)$/;"	f	file:
+sendme	unit_testing.c	/^void sendme(uint term, const char* pattern)$/;"	f
+serial_close	kernel_dev.c	/^int serial_close(void* dev) $/;"	f
+serial_dcb	kernel_dev.c	/^serial_dcb_t serial_dcb[MAX_TERMINALS];$/;"	v
+serial_dcb_t	kernel_dev.c	/^} serial_dcb_t;$/;"	t	typeref:struct:serial_device_control_block	file:
+serial_device_control_block	kernel_dev.c	/^typedef struct serial_device_control_block {$/;"	s	file:
+serial_fops	kernel_dev.c	/^file_ops serial_fops = {$/;"	v
+serial_in	bios.h	/^	int serial_in[MAX_TERMINALS];$/;"	m	struct:vm_config
+serial_open	kernel_dev.c	/^void* serial_open(uint term)$/;"	f
+serial_out	bios.h	/^	int serial_out[MAX_TERMINALS];$/;"	m	struct:vm_config
+serial_read	kernel_dev.c	/^int serial_read(void* dev, char *buf, unsigned int size)$/;"	f
+serial_rx_handler	kernel_dev.c	/^void serial_rx_handler()$/;"	f
+serial_tx_handler	kernel_dev.c	/^void serial_tx_handler()$/;"	f
+serial_write	kernel_dev.c	/^int serial_write(void* dev, const char* buf, unsigned int size)$/;"	f
+serialno	bios.h	/^	uint serialno;$/;"	m	struct:vm_config
+show_suite	unit_testing.c	/^void show_suite(const Test* suite)$/;"	f
+show_test	unit_testing.c	/^void show_test(const Test* test)$/;"	f
+show_tests	unit_testing.h	/^	int show_tests;$/;"	m	struct:program_arguments
+shutdown_mode	tinyos.h	/^} shutdown_mode;$/;"	t	typeref:enum:__anon12
+sig_atomic_t	bios.h	/^typedef int sig_atomic_t;$/;"	t
+sigalrm_set	bios.c	/^static sigset_t sigalrm_set;$/;"	v	file:
+signalfd_set	bios.c	/^static sigset_t signalfd_set;$/;"	v	file:
+signalled	kernel_cc.c	/^	sig_atomic_t signalled;		\/* this is set if the thread is signalled *\/$/;"	m	struct:__cv_waiter	file:
+sigusr1_handler	bios.c	/^static void sigusr1_handler(int signo, siginfo_t* si, void* ctx)$/;"	f	file:
+sigusr1_set	bios.c	/^static sigset_t sigusr1_set;$/;"	v	file:
+sleep_releasing	kernel_sched.c	/^void sleep_releasing(Thread_state state, Mutex* mx, enum SCHED_CAUSE cause,$/;"	f
+sleep_thread	validate_api.c	/^void sleep_thread(int sec) {$/;"	f
+sock1	validate_api.c	/^	Fid_t sock1, lsock, *sock2;$/;"	m	struct:connect_sockets	file:
+sock2	validate_api.c	/^	Fid_t sock1, lsock, *sock2;$/;"	m	struct:connect_sockets	file:
+spawn_thread	kernel_sched.c	/^TCB* spawn_thread(PCB* pcb, void (*func)())$/;"	f
+spinlock	kernel_dev.c	/^  Mutex spinlock;$/;"	m	struct:serial_device_control_block	file:
+start_main_thread	kernel_proc.c	/^void start_main_thread()$/;"	f
+state	kernel_sched.h	/^	Thread_state state; \/**< @brief The state of the thread *\/$/;"	m	struct:thread_control_block
+state	symposium.h	/^	PHIL* state;		\/**< state[i] i=1...N]: Philosopher state *\/$/;"	m	struct:__anon3
+state	terminal.c	/^int state[4];  \/* Last poll result *\/$/;"	v
+stdio_close	console.c	/^static int stdio_close(void* this) { return 0; }$/;"	f	file:
+stdio_read	console.c	/^static int stdio_read(void* __this, char *buf, unsigned int size)$/;"	f	file:
+stdio_write	console.c	/^static int stdio_write(void* __this, const char* buf, unsigned int size)$/;"	f	file:
+streamfunc	kernel_streams.h	/^  file_ops* streamfunc;		\/**< @brief The stream implementation methods *\/$/;"	m	struct:file_control_block
+streamobj	kernel_streams.h	/^  void* streamobj;			\/**< @brief The stream object (e.g., a device) *\/$/;"	m	struct:file_control_block
+subprocess	validate_api.c	/^static int subprocess(int argl, void* args) $/;"	f	file:
+successful	unit_testing.c	/^	unsigned int successful;$/;"	m	struct:__anon8	file:
+suite	unit_testing.h	/^		const struct Test ** suite;$/;"	m	union:Test::__anon14	typeref:struct:Test::__anon14::Test
+symp	symposium.h	/^	symposium_t* symp; 	\/**< The symposium definition *\/$/;"	m	struct:__anon3
+symposium_t	symposium.h	/^} symposium_t;$/;"	t	typeref:struct:__anon2
+sys_Accept	kernel_socket.c	/^Fid_t sys_Accept(Fid_t lsock)$/;"	f
+sys_Close	kernel_streams.c	/^int sys_Close(int fd)$/;"	f
+sys_Connect	kernel_socket.c	/^int sys_Connect(Fid_t sock, port_t port, timeout_t timeout)$/;"	f
+sys_CreateThread	kernel_threads.c	/^Tid_t sys_CreateThread(Task task, int argl, void* args)$/;"	f
+sys_Dup2	kernel_streams.c	/^int sys_Dup2(int oldfd, int newfd)$/;"	f
+sys_Exec	kernel_proc.c	/^Pid_t sys_Exec(Task call, int argl, void* args)$/;"	f
+sys_Exit	kernel_proc.c	/^void sys_Exit(int exitval)$/;"	f
+sys_GetPPid	kernel_proc.c	/^Pid_t sys_GetPPid()$/;"	f
+sys_GetPid	kernel_proc.c	/^Pid_t sys_GetPid()$/;"	f
+sys_GetTerminalDevices	kernel_streams.c	/^unsigned int sys_GetTerminalDevices()$/;"	f
+sys_Listen	kernel_socket.c	/^int sys_Listen(Fid_t sock)$/;"	f
+sys_OpenInfo	kernel_proc.c	/^Fid_t sys_OpenInfo()$/;"	f
+sys_OpenNull	kernel_streams.c	/^int sys_OpenNull()$/;"	f
+sys_OpenTerminal	kernel_streams.c	/^Fid_t sys_OpenTerminal(unsigned int termno)$/;"	f
+sys_Pipe	kernel_pipe.c	/^int sys_Pipe(pipe_t* pipe)$/;"	f
+sys_Read	kernel_streams.c	/^int sys_Read(Fid_t fd, char *buf, unsigned int size)$/;"	f
+sys_ShutDown	kernel_socket.c	/^int sys_ShutDown(Fid_t sock, shutdown_mode how)$/;"	f
+sys_Socket	kernel_socket.c	/^Fid_t sys_Socket(port_t port)$/;"	f
+sys_ThreadDetach	kernel_threads.c	/^int sys_ThreadDetach(Tid_t tid)$/;"	f
+sys_ThreadExit	kernel_threads.c	/^void sys_ThreadExit(int exitval)$/;"	f
+sys_ThreadJoin	kernel_threads.c	/^int sys_ThreadJoin(Tid_t tid, int* exitval)$/;"	f
+sys_ThreadSelf	kernel_threads.c	/^Tid_t sys_ThreadSelf()$/;"	f
+sys_WaitChild	kernel_proc.c	/^Pid_t sys_WaitChild(Pid_t cpid, int* status)$/;"	f
+sys_Write	kernel_streams.c	/^int sys_Write(Fid_t fd, const char *buf, unsigned int size)$/;"	f
+system_barrier	bios.c	/^static pthread_barrier_t system_barrier, core_barrier;$/;"	v	file:
+system_clock	bios.c	/^	TimerDuration system_clock;$/;"	m	struct:pic_selector	file:
+tcb	util.h	/^    TCB* tcb;$/;"	m	union:resource_list_node::__anon9
+tdo_thread	validate_api.c	/^static int tdo_thread(int argl, void* args) {$/;"	f	file:
+term	unit_testing.c	/^	uint term;$/;"	m	struct:term_proxy	file:
+term_dev_raise_if_ready	bios.c	/^static void term_dev_raise_if_ready(io_device* dev, pic_selector* ps)$/;"	f	file:
+term_list	unit_testing.h	/^	int term_list[MAX_TERMINALS+1];$/;"	m	struct:program_arguments
+term_proxy	unit_testing.c	/^typedef struct term_proxy$/;"	s	file:
+term_proxy	unit_testing.c	/^} term_proxy;$/;"	t	typeref:struct:term_proxy	file:
+term_proxy_close	unit_testing.c	/^void term_proxy_close(term_proxy* this)$/;"	f
+term_proxy_daemon	unit_testing.c	/^void* term_proxy_daemon(void* arg)$/;"	f
+term_proxy_daemon_add	unit_testing.c	/^void term_proxy_daemon_add(proxy_daemon* this, const char* pattern)$/;"	f
+term_proxy_daemon_close	unit_testing.c	/^void term_proxy_daemon_close(proxy_daemon* this)$/;"	f
+term_proxy_daemon_complete	unit_testing.c	/^int term_proxy_daemon_complete(proxy_daemon* this)$/;"	f
+term_proxy_daemon_get	unit_testing.c	/^char* term_proxy_daemon_get(proxy_daemon* this)$/;"	f
+term_proxy_daemon_init	unit_testing.c	/^void term_proxy_daemon_init(proxy_daemon* this, const char* fifoname, uint fifono, PatternProc proc)$/;"	f
+term_proxy_expect	unit_testing.c	/^void term_proxy_expect(term_proxy* this, const char* pattern)$/;"	f
+term_proxy_init	unit_testing.c	/^void term_proxy_init(term_proxy* this, uint term)$/;"	f
+term_proxy_sendme	unit_testing.c	/^void term_proxy_sendme(term_proxy* this, const char* pattern)$/;"	f
+terminal	bios.c	/^typedef struct terminal$/;"	s	file:
+terminal	bios.c	/^} terminal;$/;"	t	typeref:struct:terminal	file:
+terminal_destroy	bios.c	/^static int terminal_destroy(terminal* this)$/;"	f	file:
+terminal_init	bios.c	/^static void terminal_init(terminal* this, int fdin, int fdout)$/;"	f	file:
+test_argv	test_util.c	/^void test_argv(size_t argc, const char* argv[])$/;"	f
+test_boot_boot	validate_api.c	/^int test_boot_boot(int argl, void* args) {$/;"	f
+test_cpu_rec	validate_api.c	/^struct test_cpu_rec {$/;"	s	file:
+test_pid_rec	validate_api.c	/^struct test_pid_rec {$/;"	s	file:
+tests	unit_testing.h	/^	const struct Test* tests[MAX_TESTS];	$/;"	m	struct:program_arguments	typeref:struct:program_arguments::Test
+think	symposium.c	/^void think(int fmin, int fmax) { fibo(fiborand(fmin, fmax)); }$/;"	f
+thread	bios.c	/^	pthread_t thread;$/;"	m	struct:core	file:
+thread	kernel_cc.c	/^	TCB* thread;				\/* thread to wait *\/$/;"	m	struct:__cv_waiter	file:
+thread	unit_testing.c	/^	pthread_t thread;	\/* Daemon thread *\/$/;"	m	struct:proxy_daemon	file:
+thread_control_block	kernel_sched.h	/^typedef struct thread_control_block {$/;"	s
+thread_count	tinyos.h	/^  unsigned long thread_count; \/**< Current no of threads. *\/$/;"	m	struct:procinfo
+thread_func	kernel_sched.h	/^	void (*thread_func)(); \/**< @brief The initial function executed by this thread *\/$/;"	m	struct:thread_control_block
+thread_start	kernel_sched.c	/^static void thread_start()$/;"	f	file:
+tids	validate_api.c	/^	Tid_t* tids;$/;"	m	struct:cyclic_joins	file:
+time_since	validate_api.c	/^double time_since(struct timeval* t0)$/;"	f
+timeout	unit_testing.h	/^	unsigned int timeout;				\/**< time to kill test (see DEFAULT_TIMEOUT) *\/$/;"	m	struct:Test
+timeout_t	tinyos.h	/^typedef unsigned long timeout_t;$/;"	t
+timer_id	bios.c	/^	timer_t timer_id;$/;"	m	struct:core	file:
+timer_sigevent	bios.c	/^	struct sigevent timer_sigevent;$/;"	m	struct:core	typeref:struct:core::sigevent	file:
+timestamp	validate_api.c	/^unsigned int timestamp=0;$/;"	v
+tinyos_fid_close	tinyoslib.c	/^static int tinyos_fid_close(void* cookie)$/;"	f	file:
+tinyos_fid_functions	tinyoslib.c	/^static cookie_io_functions_t  tinyos_fid_functions =$/;"	v	file:
+tinyos_fid_read	tinyoslib.c	/^static ssize_t tinyos_fid_read(void *cookie, char *buf, size_t size)$/;"	f	file:
+tinyos_fid_write	tinyoslib.c	/^static ssize_t tinyos_fid_write(void *cookie, const char *buf, size_t size)$/;"	f	file:
+tinyos_pseudo_console	console.c	/^void tinyos_pseudo_console()$/;"	f
+tinyos_replace_stdio	tinyoslib.c	/^void tinyos_replace_stdio()$/;"	f
+tinyos_restore_stdio	tinyoslib.c	/^void tinyos_restore_stdio()$/;"	f
+total_conn	tinyos_shell.c	/^	size_t total_conn;$/;"	m	struct:__rs_globals	file:
+transfer_byte	terminal.c	/^void transfer_byte(int from, int to, int fromfd, int tofd)$/;"	f
+trytoeat	symposium.c	/^void trytoeat(SymposiumTable* S, int i)$/;"	f
+tspec2msec	validate_api.c	/^static unsigned long tspec2msec(struct timespec t)$/;"	f	file:
+type	kernel_dev.h	/^  Device_type type;     \/**< @brief Device type. $/;"	m	struct:device_control_block
+type	kernel_sched.h	/^	Thread_type type; \/**< @brief The type of thread *\/$/;"	m	struct:thread_control_block
+type	unit_testing.h	/^	Test_type type;	    				\/**< Bare, boot or suite *\/$/;"	m	struct:Test
+uint	bios.h	/^typedef unsigned int uint;$/;"	t
+unblocking_accept_connection	validate_api.c	/^static int unblocking_accept_connection(int argl, void* args) $/;"	f	file:
+unum	util.h	/^    uintptr_t unum;$/;"	m	union:resource_list_node::__anon9
+usage	mtask.c	/^void usage(const char* pname)$/;"	f
+usage	terminal.c	/^void usage() $/;"	f
+usage	tinyos_shell.c	/^void usage(const char* pname)$/;"	f
+use_color	unit_testing.h	/^	int use_color;$/;"	m	struct:program_arguments
+valgrind_include_file	Makefile	/^valgrind_include_file=\/usr\/include\/valgrind\/valgrind.h$/;"	m
+valgrind_stack_id	kernel_sched.h	/^	unsigned valgrind_stack_id; \/**< @brief Valgrind helper for stacks. $/;"	m	struct:thread_control_block
+verbose	unit_testing.h	/^	int verbose;$/;"	m	struct:program_arguments
+vm_boot	bios.c	/^void vm_boot(interrupt_handler bootfunc, uint cores, uint serialno)$/;"	f
+vm_config	bios.h	/^typedef struct vm_config {$/;"	s
+vm_config	bios.h	/^} vm_config;$/;"	t	typeref:struct:vm_config
+vm_config_terminals	bios.c	/^int vm_config_terminals(vm_config* vmc, uint serialno, int nowait)$/;"	f
+vm_configure	bios.c	/^void vm_configure(vm_config* vmc, interrupt_handler bootfunc, uint cores, uint serialno)$/;"	f
+vm_run	bios.c	/^void vm_run(vm_config* vmc)$/;"	f
+void_child	validate_api.c	/^static int void_child(int argl, void* args) { return 0; }$/;"	f	file:
+wait_for_any_child	kernel_proc.c	/^static Pid_t wait_for_any_child(int* status)$/;"	f	file:
+wait_for_specific_child	kernel_proc.c	/^static Pid_t wait_for_specific_child(Pid_t cpid, int* status)$/;"	f	file:
+waitchild_error	validate_api.c	/^static void waitchild_error()$/;"	f	file:
+waitset	tinyos.h	/^  void *waitset;        \/**< The set of waiting threads *\/$/;"	m	struct:__anon11
+waitset_lock	tinyos.h	/^  Mutex waitset_lock;   \/**< A mutex to protect `waitset` *\/$/;"	m	struct:__anon11
+wakeup	kernel_sched.c	/^int wakeup(TCB* tcb)$/;"	f
+wakeup_time	kernel_sched.h	/^	TimerDuration wakeup_time; \/**< @brief The time this thread will be woken up by the scheduler *\/$/;"	m	struct:thread_control_block
+write	tinyos.h	/^	Fid_t write;		\/**< The write end of the pipe *\/$/;"	m	struct:pipe_s
+write_serial	bios_example5.c	/^ssize_t write_serial(void* cookie, const char* buf, size_t size) $/;"	f
+xmalloc	util.h	/^static inline void * xmalloc (size_t size)$/;"	f
+yield	kernel_sched.c	/^void yield(enum SCHED_CAUSE cause)$/;"	f
+yield_handler	kernel_sched.c	/^void yield_handler() { yield(SCHED_QUANTUM); }$/;"	f
